@@ -1,0 +1,33 @@
+package main;
+
+import java.util.Scanner;
+class Converters
+{
+	public static void main(String arg[])	
+	{
+	    double f,c,km,m;
+             	    Scanner scan=new Scanner(System.in);
+	    System.out.println("Please select an option: \n 1.Fahrenheit to Celsius  \n 2.Celsius to Fahrenheitn \n 3. Miles to Kilometers");
+                   int menuSelection=scan.nextInt();
+	    switch(menuSelection)
+	    {
+	    case 1:  System.out.println("Enter  Fahrenheit temperature");
+                   	  f=scan.nextDouble();
+	    	  c=(f-32)*5/9;
+	    	  System.out.println("Celsius temperature is = "+c);
+		  break;
+	    case 2:  System.out.println("Enter  Celsius temperature");
+                   	  c=scan.nextDouble();
+	    	  f=((9*c)/5)+32;
+	    	  System.out.println("Fahrenheit temperature is = "+f);
+		  break;
+	    case 3:  System.out.println("Enter Miles");
+     	  		      m=scan.nextDouble();
+     	  	  km=m*8/5;
+     	  		 System.out.println("The answer is kilometers is = "+km);
+break;
+	   default:  System.out.println("please choose valid choice");
+	   scan.close();
+	   }  
+	} 
+}

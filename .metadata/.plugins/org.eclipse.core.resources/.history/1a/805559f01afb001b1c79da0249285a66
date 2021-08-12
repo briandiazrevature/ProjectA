@@ -1,0 +1,19 @@
+package main;
+import java.util.Scanner;
+
+
+public class Converter {
+	public static void main(String args[]) {
+		int menuSelection = 0;
+		
+		while (menuSelection != 5) {
+			menuSelection++;
+			System.out.println("Please select an option:\n1 Cups to Teaspoons\n2 Miles to Kilometers \n3 US Gallons to Imperial Gallons\n4 Quit");
+			Scanner object = new Scanner (System.in);
+			System.out.println("");
+			
+		}
+	}
+	
+
+}
